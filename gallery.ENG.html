@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Национальная киргизская одежда: Одежда и традиции</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+ <header>
+    <div class="container">
+        <div class="logo">
+            <h1>Traditional Kyrgyz <span>Clothing</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.ENG.html">Home</a></li>
+                <li><a href="history.ENG.html">History</a></li>
+                <li><a href="gallery.ENG.html" class="active">Gallery</a></li>
+                <li><a href="modern.ENG.html">Modern</a></li>
+                <li><a href="contacts.ENG.html">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="language-switcher">
+    <a href="gallery.KGZ.html" title="Кыргызча">
+        <img src="https://flagcdn.com/w40/kg.png" alt="KG" width="20">
+        <span>KG</span>
+    </a>
+    <a href="gallery.html" title="Русский">
+        <img src="https://flagcdn.com/w40/ru.png" alt="RU" width="20">
+        <span>RU</span>
+    </a>
+    <a href="gallery.ENG.html" title="English">
+        <img src="https://flagcdn.com/w40/gb.png" alt="EN" width="20">
+        <span>EN</span>
+    </a>
+</div>
+
+<div class="search-container">
+    <div class="container">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search traditional clothing...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div id="search-results" class="hidden"></div>
+    </div>
+</div>
+
+<main class="container">
+    <section class="gallery-section">
+        <h2>National Clothing Gallery</h2>
+
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="male">Male</button>
+            <button class="filter-btn" data-filter="female">Female</button>
+            <button class="filter-btn" data-filter="hats">Headwear</button>
+            <button class="filter-btn" data-filter="accessories">Accessories</button>
+            <button class="filter-btn" data-filter="modern">Modern</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="female">
+                <img src="photo/d741a11698b50185a2e5068b6c3f450a.jpg" alt="Women's national costume">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Women's costume with Elechek</div>
+                    <div class="gallery-item-desc">Traditional outfit of a married woman</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="male">
+                <img src="photo/snapedit_1748243193436.jpeg" alt="Men's national costume">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Men's costume with Kalpak</div>
+                    <div class="gallery-item-desc">Chuba and Kementay with traditional belt</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hats">
+                <img src="photo/кыргыз-высококачественное-фото-252825058.webp" alt="Kalpak">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Kalpak</div>
+                    <div class="gallery-item-desc">Traditional male headwear</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="female">
+                <img src="photo/eb13be82c0fc37f3d1581fc6e8d73fdf.jpg" alt="Women's festive costume">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Festive attire</div>
+                    <div class="gallery-item-desc">Women's costume with rich embroidery</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="accessories">
+                <img src="photo/snapedit_1748242372092.jpeg" alt="Kyrgyz jewelry">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Silver jewelry</div>
+                    <div class="gallery-item-desc">Traditional women's jewelry</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hats">
+                <img src="photo/maxresdefault.jpg" alt="Elechek">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Elechek</div>
+                    <div class="gallery-item-desc">Married women's headwear</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="photo/scale_1200.jpeg" alt="Modern interpretation">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Modern style</div>
+                    <div class="gallery-item-desc">Traditional motifs in modern clothing</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="male">
+                <img src="photo/i (3).webp" alt="Men's costume">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Chapan</div>
+                    <div class="gallery-item-desc">Traditional men's robe</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="accessories">
+                <img src="photo/snapedit_1748241957883.jpeg" alt="Shoes">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Maasy</div>
+                    <div class="gallery-item-desc">Traditional leather shoes</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="female">
+                <img src="photo/snapedit_1748241899414.jpeg" alt="Maiden attire">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Maiden costume</div>
+                    <div class="gallery-item-desc">Outfit of an unmarried girl</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="photo/snapedit_1748241795231.jpeg" alt="Modern Kalpak">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Modern Kalpak</div>
+                    <div class="gallery-item-desc">Contemporary interpretation of traditional headwear</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="accessories">
+                <img src="photo/snapedit_1748241631896.jpeg" alt="Belt">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Kemer</div>
+                    <div class="gallery-item-desc">Traditional leather belt with decorations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Modal window -->
+<div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <div class="modal-content">
+        <img id="modalImage" class="modal-img" src="" alt="">
+        <h3 id="modalTitle" class="modal-title"></h3>
+        <p id="modalDesc" class="modal-desc"></p>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About us</h4>
+                <p>This website is dedicated to preserving and promoting traditional Kyrgyz clothing as part of cultural heritage.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="modern.html">Modern</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> kyrgyz-kiyim@kyrgyz-kiyim.kg</p>
+                <p><i class="fas fa-phone"></i> +996 555 123456</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Kyrgyz Kiyim. All rights reserved.</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Фильтрация галереи
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Модальное окно
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDesc = document.getElementById('modalDesc');
+            const closeModal = document.querySelector('.close-modal');
+            
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.querySelector('img').src;
+                    const title = this.querySelector('.gallery-item-title').textContent;
+                    const desc = this.querySelector('.gallery-item-desc').textContent;
+                    
+                    modalImg.src = imgSrc;
+                    modalTitle.textContent = title;
+                    modalDesc.textContent = desc;
+                    modal.style.display = 'flex';
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
