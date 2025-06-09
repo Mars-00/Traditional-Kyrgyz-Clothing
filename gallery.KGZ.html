@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кыргыз улуттук кийимдери: Кийимдер жана салттар</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <h1>Салттуу кыргыз <span>кийими</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.KGZ.html">Башкы бет</a></li>
+                <li><a href="history.KGZ.html">Тарыхы</a></li>
+                <li><a href="gallery.KGZ.html" class="active">Галерея</a></li>
+                <li><a href="modern.KGZ.html">Азыркы заман</a></li>
+                <li><a href="contacts.KGZ.html">Байланыш</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="language-switcher">
+  <a href="gallery.KGZ.html" title="Кыргызча">
+    <img src="https://flagcdn.com/w40/kg.png" alt="KG" width="20">
+    <span>KG</span>
+  </a>
+  <a href="gallery.html" title="Русский">
+    <img src="https://flagcdn.com/w40/ru.png" alt="RU" width="20">
+    <span>RU</span>
+  </a>
+  <a href="gallery.ENG.html" title="English">
+    <img src="https://flagcdn.com/w40/gb.png" alt="EN" width="20">
+    <span>EN</span>
+  </a>
+</div>
+
+<div class="search-container">
+    <div class="container">
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Салттуу кийим боюнча издөө...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+        <div id="search-results" class="hidden"></div>
+    </div>
+</div>
+
+<main class="container">
+    <section class="gallery-section">
+        <h2>Улуттук кийим галереясы</h2>
+
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">Баары</button>
+            <button class="filter-btn" data-filter="male">Эркектер</button>
+            <button class="filter-btn" data-filter="female">Аялдар</button>
+            <button class="filter-btn" data-filter="hats">Баш кийимдер</button>
+            <button class="filter-btn" data-filter="accessories">Аксессуарлар</button>
+            <button class="filter-btn" data-filter="modern">Азыркы</button>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="female">
+                <img src="photo/d741a11698b50185a2e5068b6c3f450a.jpg" alt="Аялдардын улуттук костюму">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Элечекчен аялдын кийими</div>
+                    <div class="gallery-item-desc">Турмушка чыккан аялдын салттуу кийими</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="male">
+                <img src="photo/snapedit_1748243193436.jpeg" alt="Эркектин улуттук костюму">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Калпакчан эркектин кийими</div>
+                    <div class="gallery-item-desc">Чапан жана кементай салттуу кур менен</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hats">
+                <img src="photo/кыргыз-высококачественное-фото-252825058.webp" alt="Калпак">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Калпак</div>
+                    <div class="gallery-item-desc">Эркектердин салттуу баш кийими</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="female">
+                <img src="photo/eb13be82c0fc37f3d1581fc6e8d73fdf.jpg" alt="Аялдардын майрамдык кийими">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Майрамдык кийим</div>
+                    <div class="gallery-item-desc">Көп сайма менен кооздолгон аялдардын кийими</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="accessories">
+                <img src="photo/snapedit_1748242372092.jpeg" alt="Кыргыз зер буюмдары">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Күмүш зер буюмдар</div>
+                    <div class="gallery-item-desc">Аялдардын салттуу зер буюмдары</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="hats">
+                <img src="photo/maxresdefault.jpg" alt="Элечек">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Элечек</div>
+                    <div class="gallery-item-desc">Турмушка чыккан аялдын баш кийими</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="photo/scale_1200.jpeg" alt="Заманбап кийим">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Азыркы стиль</div>
+                    <div class="gallery-item-desc">Салттуу элементтер камтылган заманбап кийим</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="male">
+                <img src="photo/i (3).webp" alt="Эркектин чапаны">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Чапан</div>
+                    <div class="gallery-item-desc">Эркектин салттуу халаты</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="accessories">
+                <img src="photo/snapedit_1748241957883.jpeg" alt="Бут кийим">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Маасы</div>
+                    <div class="gallery-item-desc">Салттуу тери бут кийим</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="female">
+                <img src="photo/snapedit_1748241899414.jpeg" alt="Кыздын кийими">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Кыздын костюму</div>
+                    <div class="gallery-item-desc">Турмушка чыга элек кыздын кийими</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="modern">
+                <img src="photo/snapedit_1748241795231.jpeg" alt="Заманбап калпак">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Заманбап калпак</div>
+                    <div class="gallery-item-desc">Салттуу баш кийимдин азыркыча түрү</div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="accessories">
+                <img src="photo/snapedit_1748241631896.jpeg" alt="Кемер">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Кемер</div>
+                    <div class="gallery-item-desc">Салттуу кооз кожан кур</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-img" src="" alt="">
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalDesc" class="modal-desc"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О нас</h4>
+                    <p>Сайт посвящен сохранению и популяризации традиционной киргизской одежды как части культурного наследия.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="modern.html">Современность</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-envelope"></i> kyrgyz-kiyim@kyrgyz-kiyim.kg</p>
+                    <p><i class="fas fa-phone"></i> +996 555 123456</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Кыргызский Кийим. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Фильтрация галереи
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Модальное окно
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDesc = document.getElementById('modalDesc');
+            const closeModal = document.querySelector('.close-modal');
+            
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.querySelector('img').src;
+                    const title = this.querySelector('.gallery-item-title').textContent;
+                    const desc = this.querySelector('.gallery-item-desc').textContent;
+                    
+                    modalImg.src = imgSrc;
+                    modalTitle.textContent = title;
+                    modalDesc.textContent = desc;
+                    modal.style.display = 'flex';
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

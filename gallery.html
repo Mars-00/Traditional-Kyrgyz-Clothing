@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Национальная киргизская одежда: Одежда и традиции</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Традиционная киргизская <span>одежда</span></h1>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="history.html">История</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="modern.html">Современность</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="language-switcher">
+  <a href="gallery.KGZ.html" title="Кыргызча">
+    <img src="https://flagcdn.com/w40/kg.png" alt="KG" width="20">
+    <span>KG</span>
+  </a>
+  <a href="gallery.html" title="Русский">
+    <img src="https://flagcdn.com/w40/ru.png" alt="RU" width="20">
+    <span>RU</span>
+  </a>
+  <a href="gallery.ENG.html" title="English">
+    <img src="https://flagcdn.com/w40/gb.png" alt="EN" width="20">
+    <span>EN</span>
+  </a>
+</div>
+
+    <div class="search-container">
+        <div class="container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Поиск по традиционной одежде...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div id="search-results" class="hidden"></div>
+        </div>
+    </div>
+
+    <main class="container">
+        <section class="gallery-section">
+            <h2>Галерея национальной одежды</h2>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="male">Мужская</button>
+                <button class="filter-btn" data-filter="female">Женская</button>
+                <button class="filter-btn" data-filter="hats">Головные уборы</button>
+                <button class="filter-btn" data-filter="accessories">Аксессуары</button>
+                <button class="filter-btn" data-filter="modern">Современные</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="female">
+                    <img src="photo/d741a11698b50185a2e5068b6c3f450a.jpg" alt="Женский национальный костюм">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Женский костюм с элечеком</div>
+                        <div class="gallery-item-desc">Традиционный наряд замужней женщины</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="male">
+                    <img src="photo/snapedit_1748243193436.jpeg" alt="Мужской национальный костюм">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Мужской костюм с калпаком</div>
+                        <div class="gallery-item-desc">Чуба и кементай с традиционным поясом</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="hats">
+                    <img src="photo/кыргыз-высококачественное-фото-252825058.webp" alt="Калпак">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Калпак</div>
+                        <div class="gallery-item-desc">Традиционный мужской головной убор</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="female">
+                    <img src="photo/eb13be82c0fc37f3d1581fc6e8d73fdf.jpg" alt="Женский праздничный костюм">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Праздничный наряд</div>
+                        <div class="gallery-item-desc">Женский костюм с богатой вышивкой</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="accessories">
+                    <img src="photo/snapedit_1748242372092.jpeg" alt="Киргизские украшения">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Серебряные украшения</div>
+                        <div class="gallery-item-desc">Традиционные женские украшения</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="hats">
+                    <img src="photo/maxresdefault.jpg" alt="Элечек">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Элечек</div>
+                        <div class="gallery-item-desc">Головной убор замужней женщины</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="modern">
+                    <img src="photo/scale_1200.jpeg" alt="Современная интерпретация">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Современный стиль</div>
+                        <div class="gallery-item-desc">Традиционные мотивы в современной одежде</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="male">
+                    <img src="photo/i (3).webp" alt="Мужской костюм">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Чапан</div>
+                        <div class="gallery-item-desc">Традиционный мужской Чапан</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="male">
+                    <img src="photo/thum960NHM-I04092023-P0153-0077645884638153248148.jpg" alt="Обувь">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Маасы</div>
+                        <div class="gallery-item-desc">Традиционная кожаная обувь</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="female">
+                    <img src="photo/IMG_4366 (1).PNG" alt="Девичий наряд">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Девичий костюм</div>
+                        <div class="gallery-item-desc">Наряд незамужней девушки</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="modern">
+                    <img src="photo/snapedit_1748241795231.jpeg" alt="Современный калпак">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Калпак в современном стиле</div>
+                        <div class="gallery-item-desc">Актуальная интерпретация традиционного убора</div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="accessories">
+                    <img src="photo/thum960NHM-I06082024-P0219-0122691143150308505118.jpg" alt="Пояс">
+                    <div class="gallery-item-overlay">
+                        <div class="gallery-item-title">Кемер</div>
+                        <div class="gallery-item-desc">Традиционный кожаный пояс с украшениями</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-img" src="" alt="">
+            <h3 id="modalTitle" class="modal-title"></h3>
+            <p id="modalDesc" class="modal-desc"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>О нас</h4>
+                    <p>Сайт посвящен сохранению и популяризации традиционной киргизской одежды как части культурного наследия.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="history.html">История</a></li>
+                        <li><a href="gallery.html">Галерея</a></li>
+                        <li><a href="modern.html">Современность</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-envelope"></i> kyrgyz-kiyim@kyrgyz-kiyim.kg</p>
+                    <p><i class="fas fa-phone"></i> +996 555 123456</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Кыргызский Кийим. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Фильтрация галереи
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Удаляем активный класс у всех кнопок
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Добавляем активный класс текущей кнопке
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.dataset.category === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Модальное окно
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDesc = document.getElementById('modalDesc');
+            const closeModal = document.querySelector('.close-modal');
+            
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    const imgSrc = this.querySelector('img').src;
+                    const title = this.querySelector('.gallery-item-title').textContent;
+                    const desc = this.querySelector('.gallery-item-desc').textContent;
+                    
+                    modalImg.src = imgSrc;
+                    modalTitle.textContent = title;
+                    modalDesc.textContent = desc;
+                    modal.style.display = 'flex';
+                });
+            });
+            
+            closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+            });
+            
+            window.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
